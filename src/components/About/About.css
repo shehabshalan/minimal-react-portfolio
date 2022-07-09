@@ -9,10 +9,36 @@
 .about h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .about p {
   font-size: 1.2rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about .about-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+.about .about-links a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-right: 1.5rem;
+  text-decoration: none;
+}
+
+.about .btn a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: var(--light-theme-background);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: var(--light-theme-color);
 }
