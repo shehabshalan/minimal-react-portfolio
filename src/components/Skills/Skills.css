@@ -1,0 +1,33 @@
+.skills {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.skills-container-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.skills-container-grid .skills-card {
+  border-radius: 5px;
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-container-grid .skills-card:hover {
+  transform: translateY(-5px);
+}
+
+.skills-container-grid .skills-card .skills-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
