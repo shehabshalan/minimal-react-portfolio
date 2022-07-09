@@ -1,5 +1,7 @@
 import React from "react";
 import "./Navbar.css";
+import { MdLightMode, MdNightlight } from "react-icons/md";
+
 const Navbar = () => {
   const logo = "{SS}.";
   return (
@@ -19,6 +21,9 @@ const Navbar = () => {
         </li>
         <li>
           <a href="#">Contact</a>
+        </li>
+        <li>
+          <MdLightMode className="icon" size={30} />
         </li>
       </ul>
     </nav>
