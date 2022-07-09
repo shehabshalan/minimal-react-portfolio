@@ -1,0 +1,42 @@
+.experience {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.experience-container-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 1fr);
+}
+
+.experience-container-grid .experience-card {
+  border-radius: 5px;
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-container-grid .experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-container-grid .job-title-duration-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.experience-container-grid .job-title-duration-section .job-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.experience-container-grid .job-title-duration-section .duration {
+  font-size: 1rem;
+  font-style: italic;
+}
