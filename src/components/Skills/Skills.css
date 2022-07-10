@@ -29,3 +29,26 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
+
+.skills-container-grid .skills-card .skills-stack {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.skills-container-grid .skills-card .skills-stack span {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* mobile phones */
+@media (max-width: 768px) {
+  .skills-container-grid .skills-card .skills-stack {
+    justify-content: center;
+    align-items: center;
+  }
+  .skills-container-grid .skills-card .skills-title {
+    text-align: center;
+  }
+}
