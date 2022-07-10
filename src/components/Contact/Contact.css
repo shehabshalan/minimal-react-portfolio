@@ -1,0 +1,24 @@
+.contact {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.contact .contact-me {
+  transition: all 0.2s ease-in-out;
+}
+
+.contact .contact-me:hover {
+  transform: translateY(-5px);
+}
+
+.contact .contact-me h1 {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact .contact-me h1 a {
+  text-decoration: none;
+}
