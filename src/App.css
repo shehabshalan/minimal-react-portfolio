@@ -20,14 +20,93 @@
   color: var(--dark-theme-color);
 }
 
-/* .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-} */
-
 main {
   max-width: 1100px;
   width: 95%;
   margin: 0 auto;
+}
+
+/* tech colors */
+.typescript {
+  background-color: #2e72bb;
+  color: #fff;
+}
+.expressjs {
+  background-color: #3c4852;
+  color: #fff;
+}
+.nextjs {
+  background-color: #000000;
+  color: #fff;
+}
+.reactjs {
+  background-color: #5bceee;
+  color: #fff;
+}
+.mui {
+  background-color: #0180ff;
+  color: #fff;
+}
+
+.git {
+  background-color: #e34c2f;
+  color: #fff;
+}
+
+.nodejs {
+  background-color: #86bf43;
+  color: #fff;
+}
+
+.javascript {
+  background-color: #ead41c;
+  color: #fff;
+}
+
+.css {
+  background-color: #1f8ee7;
+  color: #fff;
+}
+.html {
+  background-color: #d94924;
+  color: #fff;
+}
+
+.mongodb {
+  background-color: #07ac4e;
+  color: #fff;
+}
+
+.postgresql {
+  background-color: #2f5c8b;
+  color: #fff;
+}
+
+.firebase {
+  background-color: #f19d0e;
+  color: #fff;
+}
+
+.jest {
+  background-color: #c03a14;
+  color: #fff;
+}
+
+.cicd {
+  background-color: #423f7a;
+  color: #fff;
+}
+
+.adobe-xd {
+  background-color: #430135;
+  color: #fff;
+}
+
+.strapi {
+  background-color: #8d75ff;
+  color: #fff;
+}
+.jwt {
+  background-color: #d63aff;
+  color: #fff;
 }
