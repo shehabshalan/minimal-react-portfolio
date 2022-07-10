@@ -1,28 +1,26 @@
 import React from "react";
 import "./Experience.css";
+import { experience } from "../../data/portfolio";
+import ReactMarkdown from "react-markdown";
 const Experience = () => {
+  const { title, experiences } = experience;
   return (
     <section className="experience">
-      <h1>Experience</h1>
+      <h1>{title}</h1>
       <div className="experience-container-grid">
-        <div className="experience-card">
-          <div className="job-title-duration-section">
-            <h2 className="job-title">
-              Frondend Developer - <span>Trusted KYB Limited</span>
-            </h2>
-            <p className="duration">03/2021 - 06/2022</p>
+        {experiences.map((experience, index) => (
+          <div className="experience-card" key={index}>
+            <div className="job-title-duration-section">
+              <h2 className="job-title">
+                {experience.title} - <span>{experience.company}</span>
+              </h2>
+              <p className="duration">{experience.duration}</p>
+            </div>
+            <ReactMarkdown className="experience-description">
+              {experience.description}
+            </ReactMarkdown>
           </div>
-          <p className="experience-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            neque obcaecati praesentium perferendis magnam dignissimos cum quasi
-            dolore ducimus esse delectus modi corrupti soluta, minus assumenda
-            tempora sed! Consequatur, distinctio. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Eligendi, rem reiciendis! Cumque
-            neque commodi aliquam facere dolorem magnam assumenda voluptate
-            facilis, illum omnis perspiciatis fuga, totam corporis veritatis
-            maiores voluptatem?
-          </p>
-        </div>
+        ))}
       </div>
     </section>
   );

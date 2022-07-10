@@ -18,11 +18,16 @@
   border: 1px solid;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 .container-grid .project-card:hover {
   transform: translateY(-5px);
 }
-/* .container-grid .project-card:before {
+.container-grid .project-card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -31,7 +36,7 @@
   height: 100%;
   z-index: -1;
   transition: all 0.2s ease-in-out;
-} */
+}
 
 .container-grid .project-card .project-title {
   text-align: center;
