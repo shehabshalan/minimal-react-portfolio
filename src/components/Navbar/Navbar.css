@@ -4,7 +4,6 @@
   flex-direction: row;
   align-items: center;
   padding: 1rem 1rem;
-  margin-top: 0.5rem;
   margin-bottom: 5rem;
 }
 
@@ -23,24 +22,16 @@
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   font-weight: 500;
-
   cursor: pointer;
 }
 
 .nav-list li a {
   text-decoration: none;
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-list li a:hover {
-  -webkit-transform: translate(0, 0.2em);
-  -moz-transform: translate(0, 0.2em);
-  -o-transform: translate(0, 0.2em);
-  -ms-transform: translate(0, 0.2em);
-  transform: translate(0, 0.2em);
+  transform: translateY(-5px);
 }
 
 .logo h1 {

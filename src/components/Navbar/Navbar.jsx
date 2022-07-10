@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { MdLightMode, MdNightlight } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme, theme }) => {
   const logo = "{SS}.";
   return (
     <nav className="navbar">
@@ -23,7 +23,13 @@ const Navbar = () => {
           <a href="#">Contact</a>
         </li>
         <li>
-          <MdLightMode className="icon" size={30} />
+          <a onClick={toggleTheme}>
+            {theme === "light" ? (
+              <MdNightlight className="icon" size={30} />
+            ) : (
+              <MdLightMode className="icon" size={30} />
+            )}
+          </a>
         </li>
       </ul>
     </nav>
