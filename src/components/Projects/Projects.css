@@ -35,13 +35,13 @@
 
 .container-grid .project-card .project-title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .container-grid .project-card .project-description {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 2rem;
   text-align: justify;
