@@ -51,10 +51,19 @@
   margin-bottom: 2rem;
   text-align: justify;
 }
-.container-grid .project-card .technology {
+.container-grid .project-card .technology-stack {
   font-weight: 500;
   margin-bottom: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-grid .project-card .technology-stack span {
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .container-grid .project-links {
