@@ -1,6 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-import { MdLightMode, MdNightlight } from "react-icons/md";
+import { MdLightMode, MdNightlight, MdMenu, MdClose } from "react-icons/md";
+
+const mobileMenu = (toggleTheme, theme) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div className="mobile-menu">
+      <div className="mobile-menu-toggle" onClick={toggle}>
+        <MdMenu size={30} />
+      </div>
+      {isOpen && (
+        <div className="mobile-menu-content" onClick={toggle}>
+          <ul>
+            <li>
+              <div className="mobile-menu-toggle-close">
+                <MdClose size={30} />
+              </div>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a onClick={toggleTheme}>
+                {theme === "light" ? (
+                  <MdNightlight className="icon" size={30} />
+                ) : (
+                  <MdLightMode className="icon" size={30} />
+                )}
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+};
 
 const Navbar = ({ toggleTheme, theme }) => {
   const logo = "{SS}.";
@@ -9,18 +54,20 @@ const Navbar = ({ toggleTheme, theme }) => {
       <div className="logo">
         <h1>{logo}</h1>
       </div>
+      {mobileMenu(toggleTheme, theme)}
+      {/* desktop menu */}
       <ul className="nav-list">
         <li>
-          <a href="#">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="#">Experience</a>
+          <a href="#experience">Experience</a>
         </li>
         <li>
-          <a href="#">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
         <li>
           <a onClick={toggleTheme}>
