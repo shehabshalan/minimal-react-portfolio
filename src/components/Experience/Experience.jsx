@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 const Experience = () => {
   const { title, experiences } = experience;
   return (
-    <section className="experience">
+    <section className="experience" id="experience">
       <h1>{title}</h1>
       <div className="experience-container-grid">
         {experiences.map((experience, index) => (

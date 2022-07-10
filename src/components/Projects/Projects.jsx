@@ -5,7 +5,7 @@ import { projects } from "../../data/portfolio";
 const Projects = () => {
   const { title, personalProjects } = projects;
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h1>{title}</h1>
       <div className="container-grid">
         {personalProjects.map((project, index) => (

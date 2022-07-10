@@ -5,7 +5,7 @@ import "./About.css";
 const About = () => {
   const { title, description, cv, github, linkedin } = about;
   return (
-    <section className="about">
+    <section className="about" id="about">
       <h1>{title}</h1>
       <p>{description}</p>
       <div className="about-links">
