@@ -9,7 +9,7 @@ const Experience = () => {
       <h1>{title}</h1>
       <div className="experience-container-grid">
         {experiences.map((experience, index) => (
-          <div className="experience-card" key={index}>
+          <article className="experience-card" key={index}>
             <div className="job-title-duration-section">
               <h2 className="job-title">
                 {experience.title} - <span>{experience.company}</span>
@@ -19,7 +19,7 @@ const Experience = () => {
             <ReactMarkdown className="experience-description">
               {experience.description}
             </ReactMarkdown>
-          </div>
+          </article>
         ))}
       </div>
     </section>
