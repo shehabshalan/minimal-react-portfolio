@@ -12,8 +12,10 @@ const App = () => {
 
   const toggleTheme = () => {
     if (theme === "light") {
+      localStorage.setItem("theme", "dark");
       setTheme("dark");
     } else {
+      localStorage.setItem("theme", "light");
       setTheme("light");
     }
   };
@@ -26,7 +28,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className={`${theme} app`}>
+    <div className="app" id={`${theme}`}>
       <main>
         <Navbar toggleTheme={toggleTheme} theme={theme} />
         <About />

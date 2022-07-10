@@ -1,18 +1,23 @@
+:root {
+  --light-theme-background: rgb(255, 255, 255);
+  --light-theme-color: #000000;
+  --dark-theme-background: #000000;
+  --dark-theme-color: rgb(255, 255, 255);
+}
+
 .app {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
-  color: var(--dark-theme-color);
+}
+
+#light {
+  background-color: var(--light-theme-background);
+  color: var(--light-theme-color);
+}
+
+#dark {
   background-color: var(--dark-theme-background);
-}
-
-.light {
-  --light-theme-background: rgb(255, 255, 255);
-  --light-theme-color: #000000;
-}
-
-.dark {
-  --dark-theme-background: #000000;
-  --dark-theme-color: rgb(255, 255, 255);
+  color: var(--dark-theme-color);
 }
 
 /* .container {
