@@ -16,7 +16,7 @@ const projects = {
         "Features Firebase authentication, video upload, and video streaming.",
       description:
         "it is a video-sharing app built using Firebase for authentication, and data persistence. A user can upload a video with a thumbnail and other metadata and stream it back. The app uses other technologies such as MUI for UI. ",
-      technologies: "#React.js #MUI #Firebase",
+      technologies: ["#React.js", "#MUI", "#Firebase"],
       github: "https://github.com/shehabshalan/online-video-sharing-app",
       demo: "https://videozly.netlify.app/",
     },
@@ -26,7 +26,7 @@ const projects = {
         "Features JWT authentication, headless CMS, and full CRUD operations.",
       description:
         "it is a Next.js blog site built using Strapi (a headless CMS) as a backend and implements concepts such as CSR, SSG, and ISR as well as authentication using JWT. A user can use full CRUD operations including commenting and searching.",
-      technologies: "#Next.js #MUI #Strapi #JWT",
+      technologies: ["#Next.js", "#MUI", "#Strapi", "#JWT"],
       github: "https://github.com/shehabshalan/next-blog",
       demo: "https://next-blog-eta-dun.vercel.app/",
     },
@@ -36,7 +36,13 @@ const projects = {
         "Features multi-file upload, sharing links with expiration and document preview.",
       description:
         "it is a document library (file sharing) built using the MERN stack. Users are able to upload files, keep track of the number of downloads, preview files, and create a sharing link that is set to expire according to the specified time.",
-      technologies: "#React.js #MUI #Express.js #Node.js #MongoDB #Cloudinary",
+      technologies: [
+        "#React.js",
+        "#MUI",
+        "#Express.js",
+        "#Node.js",
+        "#MongoDB",
+      ],
       github: "https://github.com/shehabshalan/document-library",
       demo: "https://document-library-api.herokuapp.com/",
     },
@@ -61,16 +67,25 @@ const skills = {
   mySkills: [
     {
       title: "Languages & Frameworks",
-      skills:
-        "#HTML #CSS #JavaScript #TypeScript #React.js #Next.js #MUI #Node.js #Express.js ",
+      skills: [
+        "#HTML",
+        "#CSS",
+        "#JavaScript",
+        "#TypeScript",
+        "#React.js",
+        "#Next.js",
+        "#MUI",
+        "#Node.js",
+        "#Express.js",
+      ],
     },
     {
       title: "Databases",
-      skills: "#MongoDB #PostgreSQL #Firebase",
+      skills: ["#MongoDB", "#PostgreSQL", "#Firebase"],
     },
     {
       title: "Others",
-      skills: "#Git #Jest #CI/CD #AdobeXD",
+      skills: ["#Git", "#Jest", "#CI/CD", "#AdobeXD"],
     },
   ],
 };
