@@ -7,7 +7,7 @@ const mobileMenu = (toggleTheme, theme) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="mobile-menu">
+    <header className="mobile-menu">
       <div className="mobile-menu-toggle" onClick={toggle}>
         <MdMenu size={30} />
       </div>
@@ -43,43 +43,45 @@ const mobileMenu = (toggleTheme, theme) => {
           </ul>
         </div>
       )}
-    </div>
+    </header>
   );
 };
 
 const Navbar = ({ toggleTheme, theme }) => {
   const logo = "{SS}.";
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <h1>{logo}</h1>
-      </div>
-      {mobileMenu(toggleTheme, theme)}
-      {/* desktop menu */}
-      <ul className="nav-list">
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
-          <a onClick={toggleTheme}>
-            {theme === "light" ? (
-              <MdNightlight className="icon" size={30} />
-            ) : (
-              <MdLightMode className="icon" size={30} />
-            )}
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <nav className="navbar">
+        <div className="logo">
+          <h1>{logo}</h1>
+        </div>
+        {mobileMenu(toggleTheme, theme)}
+        {/* desktop menu */}
+        <ul className="nav-list">
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a onClick={toggleTheme}>
+              {theme === "light" ? (
+                <MdNightlight className="icon" size={30} />
+              ) : (
+                <MdLightMode className="icon" size={30} />
+              )}
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 
