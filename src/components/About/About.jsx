@@ -3,21 +3,21 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { about } from "../../data/portfolio";
 import "./About.css";
 const About = () => {
-  const { title, description } = about;
+  const { title, description, cv, github, linkedin } = about;
   return (
     <section className="about">
       <h1>{title}</h1>
       <p>{description}</p>
       <div className="about-links">
-        <a href="#">
+        <a href={github} target="_blank">
           <FaGithub className="icon" size={30} />
         </a>
-        <a href="#">
+        <a href={linkedin} target="_blank">
           <FaLinkedinIn className="icon" size={30} />
         </a>
-        <div className="btn">
-          <a href="#">Download CV</a>
-        </div>
+        <a href={cv} target="_blank">
+          Download CV
+        </a>
       </div>
     </section>
   );

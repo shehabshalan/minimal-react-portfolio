@@ -28,17 +28,11 @@
 }
 .about .about-links a {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-right: 1.5rem;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
-
-.about .btn a {
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-decoration: none;
-  background-color: var(--light-theme-background);
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  color: var(--light-theme-color);
+.about .about-links a:hover {
+  transform: translateY(-5px);
 }
