@@ -1,18 +1,28 @@
-:root {
-  --dark-theme-background: #000000;
-  --dark-theme-color: rgb(255, 255, 255);
+.app {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: var(--dark-theme-color);
+  background-color: var(--dark-theme-background);
+}
+
+.light {
   --light-theme-background: rgb(255, 255, 255);
   --light-theme-color: #000000;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--dark-theme-background);
-  color: var(--dark-theme-color);
+.dark {
+  --dark-theme-background: #000000;
+  --dark-theme-color: rgb(255, 255, 255);
 }
 
-.container {
+/* .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+} */
+
+main {
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
 }
