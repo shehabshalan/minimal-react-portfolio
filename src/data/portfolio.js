@@ -70,7 +70,7 @@ const skills = {
     },
     {
       title: "Others",
-      skills: "#Git #Jest #CI/CD",
+      skills: "#Git #Jest #CI/CD #AdobeXD",
     },
   ],
 };
